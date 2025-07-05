@@ -159,7 +159,7 @@ class PaymentManager {
         
         const modalHTML = `
             <div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                <div class="bg-white rounded-lg p-6 w-full max-w-md mx-4">
+                <div class="bg-white rounded-lg p-6 w-full max-w-md mx-4 max-h-[90vh] overflow-y-auto">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="text-xl font-bold">购买 ${courseConfig.name}</h3>
                         <button class="close-modal text-gray-500 hover:text-gray-700">
@@ -187,8 +187,8 @@ class PaymentManager {
                                 width="410" 
                                 height="${iframeHeight}" 
                                 frameborder="0" 
-                                scrolling="no" 
-                                style="overflow-y: hidden; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                                scrolling="yes" 
+                                style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
                                 Can't load widget
                             </iframe>
                         </div>
